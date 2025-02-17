@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <!-- Include Tailwind CSS -->
+    <link href="index.css" rel="stylesheet">
+
     <!-- Google Fonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,14 +28,34 @@
         .poppins{
             font-family: "Poppins", serif;
         }
-
-        .primary-clr{
-            color: #179800;
+        @keyframes h1{
+            0% { transform: translateX(-2000px);}
+            100% { transform: translateX(0px);}
         }
+        .h1{
+            animation: h1 3s 1s ease-in-out forwards;
+        }
+        
+        @keyframes par{
+            0% { transform: translateX(2000px);}
+            100% { transform: translateX(0px);}
+        }
+        .par{
+            animation: par 3s 1s ease-in-out forwards;
+        }
+
+        @keyframes im{
+            0% { transform: translateY(2000px);}
+            100% { transform: translateY(0px);}
+        }
+        .im{
+            animation: im 3s 1s ease-in-out forwards;
+        }
+
      </style>
 </head>
 <body class="sora">
-    <header class="bg-gradient-to-b from-[#ffffff] to-[#EFEBE3]">
+    <header class="bg-gradient-to-b from-[#ffffff] to-[#EFEBE3] overflow-hidden">
         <!-- Navigation Bar -->
         <nav class="container mb-10 mx-auto border-b-2 border-[#179800] md:border-none lg:pt-4">
             <div class="navbar">
@@ -109,11 +132,11 @@
         <div class="hero">
             <div class="hero-content text-center pb-0">
                 <div class="max-w-4xl">
-                    <h1 class="mb-5 text-3xl lg:text-6xl font-semibold lg:leading-tight">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
-                    <p class="mb-5 text-base lg:text-xl">
+                    <h1 class="mb-5 text-3xl lg:text-6xl font-semibold lg:leading-tight -translate-x-[2000px] h1">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+                    <p class="mb-5 text-base lg:text-xl translate-x-[2000px] par">
                         Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
                     </p>
-                    <img src="assets/hero-vegetables.png" alt="hero-vegetables">
+                    <img src="assets/hero-vegetables.png" alt="hero-vegetables" class="translate-y-[2000px] im">
                 </div>
             </div>
         </div>
