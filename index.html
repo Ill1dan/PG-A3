@@ -8,15 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Font Awsome Script -->
+    <script src="https://kit.fontawesome.com/8a0d75a546.js" crossorigin="anonymous"></script>
+
     <!-- Custom CSS -->
      <style>
         .sora{
             font-family: "Sora", serif;
+        }
+        .poppins{
+            font-family: "Poppins", serif;
         }
 
         .primary-clr{
@@ -164,7 +171,7 @@
                     <!-- Products Grid -->
                     <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 flex-1">
                         <!-- Product 1 -->
-                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center">
+                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center border border-[#1111111a]">
                             <div class="p-2 aspect-square rounded-lg bg-[#EFEBE3]">
                                 <img src="assets/onion.png" alt="onion">
                             </div>
@@ -178,7 +185,7 @@
                             </div>
                         </div>
                         <!-- Product 2 -->
-                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center">
+                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center border border-[#1111111a]">
                             <div class="p-2 aspect-square rounded-lg bg-[#EFEBE3]">
                                 <img src="assets/tomato.png" alt="tomato">
                             </div>
@@ -192,7 +199,7 @@
                             </div>
                         </div>
                         <!-- Product 3 -->
-                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center">
+                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center border border-[#1111111a]">
                             <div class="p-2 aspect-square rounded-lg bg-[#EFEBE3]">
                                 <img src="assets/potato.png" alt="potato">
                             </div>
@@ -206,7 +213,7 @@
                             </div>
                         </div>
                         <!-- Product 4 -->
-                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center">
+                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center border border-[#1111111a]">
                             <div class="p-2 aspect-square rounded-lg bg-[#EFEBE3]">
                                 <img src="assets/tomato.png" alt="tomato">
                             </div>
@@ -220,7 +227,7 @@
                             </div>
                         </div>
                         <!-- Product 5 -->
-                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center">
+                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center border border-[#1111111a]">
                             <div class="p-2 aspect-square rounded-lg bg-[#EFEBE3]">
                                 <img src="assets/onion.png" alt="onion">
                             </div>
@@ -234,7 +241,7 @@
                             </div>
                         </div>
                         <!-- Product 6 -->
-                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center">
+                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center border border-[#1111111a]">
                             <div class="p-2 aspect-square rounded-lg bg-[#EFEBE3]">
                                 <img src="assets/potato.png" alt="potato">
                             </div>
@@ -248,7 +255,7 @@
                             </div>
                         </div>
                         <!-- Product 7 -->
-                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center">
+                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center border border-[#1111111a]">
                             <div class="p-2 aspect-square rounded-lg bg-[#EFEBE3]">
                                 <img src="assets/potato.png" alt="potato">
                             </div>
@@ -262,7 +269,7 @@
                             </div>
                         </div>
                         <!-- Product 8 -->
-                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center">
+                        <div class="bg-white rounded-xl flex p-4 gap-4 items-center border border-[#1111111a]">
                             <div class="p-2 aspect-square rounded-lg bg-[#EFEBE3]">
                                 <img src="assets/tomato.png" alt="tomato">
                             </div>
@@ -276,7 +283,7 @@
                             </div>
                         </div>
                         <!-- Product 9 -->
-                        <div class="bg-white rounded-xl lg:flex p-4 gap-4 items-center hidden">
+                        <div class="bg-white rounded-xl lg:flex p-4 gap-4 items-center hidden border border-[#1111111a]">
                             <div class="p-2 aspect-square rounded-lg bg-[#EFEBE3]">
                                 <img src="assets/onion.png" alt="onion">
                             </div>
@@ -293,10 +300,117 @@
                 </div>
             </div>
         </section>
+        <!-- Section For Customer Reviews -->
+        <section>
+            <div class="container p-2 mx-auto py-20">
+                <!-- Customer Reviews Header -->
+                <h1 class="text-[#179800] mb-8 font-semibold text-2xl lg:text-4xl">Customer Reviews</h1>
+                <!-- Customer Reviews Container -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- Review Card 1 -->
+                    <div class="bg-[#EFEBE3] flex gap-6 flex-col justify-center items-center p-8 rounded-2xl text-center aspect-square">
+                        <div class="bg-white rounded-full p-4 w-40 lg:w-60 hover:shadow-2xl hover:p-0 ease-linear duration-75">
+                            <img src="assets/customer1.jpg" alt="customer1" class="object-cover rounded-full aspect-square">
+                        </div>
+                        <h2 class="font-semibold text-xl lg:text-2xl">John Doe</h2>
+                        <p class="font-light text-base lg:text-xl">"Amazing service! The delivery was fast and the products were fresh. Highly recommend!"</p>
+                    </div>
+                    <!-- Review Card 2 -->
+                    <div class="bg-[#EFEBE3] flex gap-6 flex-col justify-center items-center p-8 rounded-2xl text-center aspect-square">
+                        <div class="bg-white rounded-full p-4 w-40 lg:w-60 hover:shadow-2xl hover:p-0 ease-linear duration-75">
+                            <img src="assets/customer2.jpg" alt="customer2" class="object-cover rounded-full aspect-square">
+                        </div>
+                        <h2 class="font-semibold text-xl lg:text-2xl">Jane Smith</h2>
+                        <p class="font-light text-base lg:text-xl">"Great quality products and excellent customer service. Will definitely shop here again."</p>
+                    </div>
+                    <!-- Review Card 3 -->
+                    <div class="bg-[#EFEBE3] flex gap-6 flex-col justify-center items-center p-8 rounded-2xl text-center aspect-square">
+                        <div class="bg-white rounded-full p-4 w-40 lg:w-60 hover:shadow-2xl hover:p-0 ease-linear duration-75">
+                            <img src="assets/customer3.jpg" alt="customer3" class="object-cover rounded-full aspect-square">
+                        </div>
+                        <h2 class="font-semibold text-xl lg:text-2xl">Emily Johnson</h2>
+                        <p class="font-light text-base lg:text-xl">"I love the variety of healthy products available. The prices are unbeatable too!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section For Arrival & Offers -->
+        <section class="bg-[#EFEBE3]">
+            <div class="container p-2 mx-auto py-20 pb-[40vh] lg:pb-[30vh]">
+                <!-- Arrival & Offer Header -->
+                <h1 class="text-[#179800] mb-8 font-semibold text-2xl lg:text-4xl">Arrival & Offers</h1>
+                <!-- Offers Container -->
+                <div class="flex flex-col lg:flex-row gap-6">
+                    <!-- Daawat Card -->
+                    <div class="bg-[#115414] flex gap-6 p-6 lg:p-10 items-center justify-between flex-1 md:flex-[0_1_60%] rounded-2xl">
+                        <div class="poppins flex flex-col gap-4 lg:gap-6 justify-between items-center">
+                            <img src="assets/dawat-logo.png" alt="dawat-logo" class="h-20 object-cover lg:h-auto">
+                            <button class="btn font-normal text-white bg-[#63B76D] lg:text-xl text-xs px-4 lg:px-8 border-2 border-[#63B76D] hover:bg-white hover:border-white hover:text-[#63B76D]">Cook Exotic Dishes</button>
+                            <h1 class="text-white text-lg lg:text-4xl font-normal">UP to <span class="font-bold">20% OFF</span></h1>
+                        </div>
+                        <div>
+                            <img src="assets/dawat-mock-up.png" alt="dawat-mock-up" class="h-40 sm:h-60 object-cover lg:h-auto">
+                        </div>
+                    </div>
+                    <!-- India Gate Card -->
+                    <div class="bg-[#102861] flex gap-6 py-6 px-6 lg:p-10 items-center justify-between rounded-2xl flex-1">
+                        <div class="poppins flex flex-col gap-4 justify-between items-center">
+                            <img src="assets/india-gate-logo.png" alt="india-gate-logo" class="h-20 object-cover lg:h-auto">
+                            <button class="btn font-normal text-white bg-[#2A4D97] lg:text-xl text-xs px-4 lg:px-8 border-2 border-[#2A4D97] hover:bg-white hover:border-white hover:text-[#2A4D97]">World's No.1 Rice</button>
+                            <h1 class="text-white text-lg lg:text-4xl font-normal">UP to <span class="font-bold">40% OFF</span></h1>
+                        </div>
+                        <div>
+                            <img src="assets/india-gate-mock-up.png" alt="india-gate-mock-up" class="h-40 sm:h-60 object-cover lg:h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-
+    <footer class="bg-[#179800]">
+        <div class="container p-2 mx-auto py-16 lg:py-32 relative">
+            <!-- Grocery News Card -->
+            <div class="bg-gradient-to-b from-[#ffffff] to-[#EFEBE3] rounded-2xl absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2 w-3/4 lg:w-full">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-8 py-8 px-12">
+                    <div>
+                        <img src="assets/vegetable-busket.png" alt="vegetable-busket">
+                    </div>
+                    <div class="flex flex-col gap-6 lg:gap-8 justify-center items-center lg:items-stretch">
+                        <h1 class="text-[#179800] lg:text-black font-semibold text-xl sm:text-2xl lg:text-4xl">Get Grocery News!</h1>
+                        <p class="font-normal text-base lg:text-xl">Exclusive training tips, ticks, product deals and more.</p>
+                        <input type="email" placeholder="Enter email..." class="p-4 rounded-lg outline-none bg-[#EFEBE3] w-full lg:w-96 block hover:bg-gray-800 transition hover:text-white">
+                        <button class="lg:self-start btn bg-[#179800] text-white font-semibold px-8 py-3 hover:bg-white hover:text-[#179800] border-2 border-[#179800] hover:border-[#179800]">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="flex flex-col lg:flex-row justify-between gap-8 mt-[30vh] lg:mt-[20vh] text-white">
+                <!-- Footer Logo -->
+                <div>
+                    <img src="assets/logo-footer.png" alt="footer-logo" class="mb-3">
+                    <p class="font-light text-base lg:text-xl text-[rgb(255,255,255,0.7)] max-w-96">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+                </div>
+                <!-- Footer Links -->
+                <div class="lg:self-end">
+                    <ul class="font-light text-base lg:text-xl flex flex-col gap-2 lg:gap-4 text-[#EFEBE3]">
+                        <li class="cursor-pointer">Product</li>
+                        <li class="cursor-pointer">Services</li>
+                        <li class="cursor-pointer">Contact us</li>
+                    </ul>
+                </div>
+                <!-- Footer Socials -->
+                <div class="lg:self-end flex flex-col gap-2 lg:gap-4">
+                    <p class="font-light text-xs lg:text-base">Follow Us</p>
+                    <div class="flex gap-4 text-xl">
+                        <i class="fa-brands fa-facebook cursor-pointer"></i>
+                        <i class="fa-brands fa-instagram cursor-pointer"></i>
+                        <i class="fa-brands fa-linkedin cursor-pointer"></i>
+                        <i class="fa-brands fa-youtube cursor-pointer"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
